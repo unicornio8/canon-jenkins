@@ -15,10 +15,12 @@ CSS and JS to implement a theme for [Jenkins CI](http://jenkins-ci.org/).
 ![After](JenkinsAfter3.png "After")
 
 ##Before start
-Download the next files:
-style.min.css
-app.min.js
-app.delivery.pipeline.min.js
+
+Download the next files in $JENKINS_HOME/userContent/:
+
+1. style.min.css
+2. app.min.js
+3. app.delivery.pipeline.min.js
 
 ## Usage
 
