@@ -14,7 +14,7 @@ body {
 .logo {
     width: 154px !important;
     height: 34px !important;
-    background: url('logo.svg') no-repeat center center;
+    background: url('logo.png') no-repeat center center;
     background-size: auto 100%;
     margin-top: 8px;
     cursor: pointer;
