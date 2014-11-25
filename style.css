@@ -13,10 +13,11 @@ body {
 
 .logo {
     width: 154px !important;
-    height: 34px !important;
-    background: url('logo.png') no-repeat center center;
+    height: 40px !important;
+    background: url(logo.png) no-repeat left center;
     background-size: auto 100%;
-    margin-top: 8px;
+    margin-top: 0px;
+	margin-left: 0px !important;
     cursor: pointer;
 }
 
@@ -145,3 +146,80 @@ td.progress-bar-done {
 td.progress-bar-left {
     border: 1px solid #BBBBBB;
 }
+
+/* Build pipelines */
+#main-panel.full {
+	width: 100% !important;
+}
+#build-pipeline-plugin-content .build-card.rounded{
+	background: #FFF;
+	border-radius: 0px;
+	box-shadow: none;
+	border: 1px solid #8B8989;
+}
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS{
+	border-left:20px solid #019875;
+}
+#build-pipeline-plugin-content .build-card.rounded.FAILURE{
+	border-left:20px solid #EF2929;
+}
+#build-pipeline-plugin-content .revision.rounded.build-card{
+	background: #FFFFFF;
+	color: #EEEEEE;
+}
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS a:link, 
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS a:visited, 
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS a:active, 
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS a:hover,
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS .build-time,
+#build-pipeline-plugin-content .build-card.rounded.SUCCESS .build-duration{
+	color: #333333;
+	font-size: 1.1em;
+}
+#build-pipeline-plugin-content .build-card.rounded.FAILURE a:link,
+#build-pipeline-plugin-content .build-card.rounded.FAILURE a:visited,
+#build-pipeline-plugin-content .build-card.rounded.FAILURE a:active,
+#build-pipeline-plugin-content .build-card.rounded.FAILURE a:hover,
+#build-pipeline-plugin-content .build-card.rounded.FAILURE .build-time,
+#build-pipeline-plugin-content .build-card.rounded.FAILURE .build-duration{
+	color: #333333;
+	font-size: 1.1em;
+}
+#build-pipeline-plugin-content .build-card.rounded .build-time{
+	width: 150px;
+}
+#build-pipeline-plugin-content td.next{
+	vertical-align: middle;
+	font-size: 1.5em;
+}
+#build-pipeline-plugin-content tbody.pipelineGroup{
+	background: #FFFFFF;
+	border-width: 0px;
+	border-bottom:1px solid #000000;
+}
+#build-pipeline-plugin-content tbody.pipelineGroup > tr > td{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+#build-pipeline-plugin-content tbody.pipelineGroup:first-child,
+#build-pipeline-plugin-content tbody.pipelineGroup:hover{
+	background:#F0F0F0;
+}
+/* Delivery Pipeline */
+.pipeline-main div.stage-task.FAILED{
+	border-left: 6px solid #EF2929;
+	background: #FFFFFF;
+	background: rgba(239,41,41, 0.25);
+}
+.pipeline-main .pipeline-cell{
+	position: relative;
+}
+.pipeline-main .pipeline-cell .arrow.delivery{
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	width: 60px;
+	font-size: 2.5em;
+	text-align: center;
+}
+

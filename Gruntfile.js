@@ -12,7 +12,8 @@ module.exports = function(grunt) {
             },
             build : {
                 files: {
-                    'build/output.min.js': ['app.js']
+                    'build/app.min.js': ['app.js'],
+                    'build/app.delivery.pipeline.min.js': ['app.delivery.pipeline.js'],
                 }
             }
         },
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 files: {
-                    'build/styles.css' : ['*.css']
+                    'build/styles.min.css' : ['*.css']
                 }
             }
         },
@@ -42,14 +43,14 @@ module.exports = function(grunt) {
                 src: ["build/"]
             }
         },
-        rev: {
+        /*rev: {
             files: {
                 src: ['build/*.{js,css}']
             }
         },
         jshint: {
             files: ['*.js']
-        }
+        }*/
     });
 
     // Load the plugin that provides the "uglify" task.
@@ -61,7 +62,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'cssmin','rev','jshint']);
+    grunt.registerTask('default', ['clean', 'uglify', 'cssmin']);  //,'rev','jshint']);
 
 
 };
