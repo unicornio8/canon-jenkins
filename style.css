@@ -53,7 +53,7 @@ body {
     box-shadow: #c2c2c2 0 3px 8px 1px;
 }
 
-#breadcrumbs LI:hover, A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
+#breadcrumbs li:hover, a.breadcrumbBarAnchor.mouseIsOverMenuSelector {
     background-color: transparent !important;
     color: #333 !important;
 }
@@ -147,6 +147,12 @@ td.progress-bar-left {
     border: 1px solid #BBBBBB;
 }
 
+/* Primary buttons */
+#jenkins .yui-button.primary button{
+	background-color: #019875;
+	color: #FFFFFF;
+	border: 1px solid #FFF;
+}
 /* Build pipelines */
 #main-panel.full {
 	width: 100% !important;
